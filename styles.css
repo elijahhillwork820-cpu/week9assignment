@@ -1,9 +1,10 @@
 
-/* Basic page setup */
+/* Apply consistent sizing to every element */
 * {
     box-sizing: border-box;
 }
 
+/* Main page appearance */
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* Main business heading */
+/* Business heading */
 header {
     background-color: #F4C542;
     color: #333333;
@@ -24,10 +25,12 @@ header {
 header h1 {
     margin-bottom: 10px;
     font-size: 2.2rem;
+    color: #333333;
 }
 
 header p {
     font-size: 1.1rem;
+    color: #333333;
 }
 
 /* Food truck photograph */
@@ -41,17 +44,181 @@ header img {
     border: 4px solid #E6A817;
 }
 
-/* Phone and tablet adjustments */
-@media (max-width: 600px) {
-    header {
-        padding: 20px 15px;
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #FFFFFF;
+    color: #333333;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Section headings */
+h2, h3 {
+    color: #333333;
+}
+
+h2 {
+    border-bottom: 3px solid #F4C542;
+    padding-bottom: 8px;
+}
+
+/* Form layout */
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 2px solid #E6A817;
+    border-radius: 8px;
+    margin: 25px 0;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333333;
+    padding: 0 8px;
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Text fields and dropdowns */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #999999;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+/* Checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #A66A00;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    color: #333333;
+}
+
+/* Keyboard focus indicators */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #0066CC;
+    outline-offset: 2px;
+}
+
+/* Instructions and helpful notes */
+small {
+    display: block;
+    margin-bottom: 12px;
+    color: #333333;
+}
+
+/* Text areas */
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Form buttons */
+button {
+    padding: 12px 22px;
+    margin: 10px 8px 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #D99B18;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B87900;
+    color: #FFFFFF;
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: #666666;
+    color: #FFFFFF;
+}
+
+button[type="reset"]:hover {
+    background-color: #444444;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F4C542;
+    color: #333333;
+    margin-top: 30px;
+}
+
+/* Tablet layout */
+@media (max-width: 768px) {
+    main {
+        width: 94%;
+        padding: 18px;
     }
 
     header h1 {
-        font-size: 1.7rem;
+        font-size: 2rem;
+    }
+}
+
+/* Phone layout */
+@media (max-width: 390px) {
+    main {
+        width: 96%;
+        padding: 12px;
     }
 
-    header p {
-        font-size: 1rem;
+    header {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
     }
 }
