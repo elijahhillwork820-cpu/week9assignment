@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Crepe Truck Philly | Order Online</title>
+    <title>The Crepe Truck Philly | Online Order Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,8 +12,7 @@
 
     <header>
         <h1>The Crepe Truck Philly</h1>
-
-        <p>Good Crepes, Made Fresh!</p>
+        <p>Fresh Crepes Made for Philadelphia!</p>
 
         <img
             src="images/crepe-truck.jpg"
@@ -21,12 +20,474 @@
         >
 
         <p>
-            Craving something sweet or savory?
-            Stop by and enjoy a freshly made crepe!
+            Looking for something sweet or savory?
+            Explore the menu and choose your favorites.
         </p>
 
-        <p>Serving Philadelphia, PA</p>
+        <p>1291 W Norris Street, Philadelphia, PA</p>
+        <p>Monday–Friday: 12:00 PM–5:30 PM</p>
     </header>
+
+    <main>
+        <section>
+            <h2>Place Your Order</h2>
+
+            <p>
+                Complete the form below with your contact information,
+                crepe selections, and pickup details.
+            </p>
+
+            <p>
+                <strong>Menu pricing:</strong>
+                The official website currently lists $9 for Peachy Fresh.
+                Prices for the other crepes are not posted online.
+                Please confirm those prices with the truck.
+            </p>
+
+            <form action="#" method="get">
+
+                <!-- Customer contact information -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <label for="customer-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="customer-name"
+                        name="customer-name"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel"
+                        required
+                    >
+                </fieldset>
+
+                <!-- Choose the type of crepe -->
+                <fieldset>
+                    <legend>Menu Category</legend>
+
+                    <p>Select the type of crepe you want to order.</p>
+
+                    <input
+                        type="radio"
+                        id="sweet"
+                        name="menu-category"
+                        value="Sweet"
+                        required
+                    >
+                    <label for="sweet">Sweet Crepes</label>
+
+                    <input
+                        type="radio"
+                        id="savory"
+                        name="menu-category"
+                        value="Savory"
+                    >
+                    <label for="savory">Savory Crepes</label>
+                </fieldset>
+
+                <!-- Official sweet crepe menu -->
+                <fieldset>
+                    <legend>Sweet Crepes</legend>
+
+                    <p>
+                        Select any sweet crepes you would like.
+                        You may choose more than one.
+                    </p>
+
+                    <input type="checkbox" id="cookies-cream"
+                        name="crepe[]" value="Cookies N Cream">
+                    <label for="cookies-cream">
+                        Cookies N' Cream — Nutella, Oreo crumbs, and whipped cream.
+                    </label>
+
+                    <input type="checkbox" id="nutella-banana"
+                        name="crepe[]" value="Nutella Banana">
+                    <label for="nutella-banana">
+                        Nutella Banana — Nutella and banana.
+                    </label>
+
+                    <input type="checkbox" id="nutella-strawberry"
+                        name="crepe[]" value="Nutella Strawberry">
+                    <label for="nutella-strawberry">
+                        Nutella Strawberry — Nutella and strawberries.
+                    </label>
+
+                    <input type="checkbox" id="nsb"
+                        name="crepe[]" value="NSB">
+                    <label for="nsb">
+                        NSB — Nutella, strawberries, and banana.
+                    </label>
+
+                    <input type="checkbox" id="berries-cheesecake"
+                        name="crepe[]" value="Berries Cheesecake">
+                    <label for="berries-cheesecake">
+                        Berries Cheesecake — Cheesecake spread,
+                        blueberries, strawberries, and raspberries.
+                    </label>
+
+                    <input type="checkbox" id="honey-apple"
+                        name="crepe[]" value="Honey Apple">
+                    <label for="honey-apple">
+                        Honey Apple — Honey and apple.
+                    </label>
+
+                    <input type="checkbox" id="honey-banana"
+                        name="crepe[]" value="Honey Banana">
+                    <label for="honey-banana">
+                        Honey Banana — Honey and banana.
+                    </label>
+
+                    <input type="checkbox" id="berries-boston"
+                        name="crepe[]" value="Berries Boston">
+                    <label for="berries-boston">
+                        Berries Boston — Boston cream spread,
+                        strawberries, blueberries, and Nutella.
+                    </label>
+
+                    <input type="checkbox" id="smores"
+                        name="crepe[]" value="S'mores">
+                    <label for="smores">
+                        S'mores — Fluff spread, graham crackers, and Nutella.
+                    </label>
+
+                    <input type="checkbox" id="granola-crunch"
+                        name="crepe[]" value="Granola Crunch">
+                    <label for="granola-crunch">
+                        Granola Crunch — Nutella, granola, and peanut butter.
+                    </label>
+
+                    <input type="checkbox" id="peachy-fresh"
+                        name="crepe[]" value="Peachy Fresh">
+                    <label for="peachy-fresh">
+                        Peachy Fresh — Caramel, peach, and strawberries.
+                        Listed online at $9.
+                    </label>
+
+                    <input type="checkbox" id="peanut-butter-cup"
+                        name="crepe[]" value="Peanut Butter Cup">
+                    <label for="peanut-butter-cup">
+                        Peanut Butter Cup — Nutella, banana, and peanut butter.
+                    </label>
+
+                    <input type="checkbox" id="mango-mania"
+                        name="crepe[]" value="Mango Mania">
+                    <label for="mango-mania">
+                        Mango Mania — Boston spread, mango, banana, and Nutella.
+                    </label>
+
+                    <input type="checkbox" id="cannoli"
+                        name="crepe[]" value="Cannoli">
+                    <label for="cannoli">
+                        Cannoli — Cannoli cream, chocolate chips, and Nutella.
+                    </label>
+
+                    <input type="checkbox" id="caramel-apple"
+                        name="crepe[]" value="Caramel Apple">
+                    <label for="caramel-apple">
+                        Caramel Apple — Caramel and apple.
+                    </label>
+
+                    <input type="checkbox" id="fluffer-nutter"
+                        name="crepe[]" value="Fluffer Nutter">
+                    <label for="fluffer-nutter">
+                        Fluffer Nutter — Fluff spread, peanut butter, and Nutella.
+                    </label>
+                </fieldset>
+
+                <!-- Official savory crepe menu -->
+                <fieldset>
+                    <legend>Savory Crepes</legend>
+
+                    <p>
+                        Select any savory crepes you would like.
+                        The vegetables listed by the business are spinach,
+                        mushrooms, broccoli, tomatoes, onions, and peppers.
+                    </p>
+
+                    <input type="checkbox" id="buffalo-chicken"
+                        name="crepe[]" value="Buffalo Chicken">
+                    <label for="buffalo-chicken">
+                        Buffalo Chicken — Grilled chicken, vegetables,
+                        blue cheese, and hot sauce.
+                    </label>
+
+                    <input type="checkbox" id="chipotle"
+                        name="crepe[]" value="Chipotle">
+                    <label for="chipotle">
+                        Chipotle — Grilled chicken, vegetables,
+                        cheese, and chipotle sauce.
+                    </label>
+
+                    <input type="checkbox" id="general-tso"
+                        name="crepe[]" value="General Tso's">
+                    <label for="general-tso">
+                        General Tso's — Grilled chicken, vegetables,
+                        cheese, and General Tso's sauce.
+                    </label>
+
+                    <input type="checkbox" id="enzos-avocado"
+                        name="crepe[]" value="Enzo's Avocado">
+                    <label for="enzos-avocado">
+                        Enzo's Avocado — Grilled chicken, vegetables,
+                        avocado, cheese, salsa, and tzatziki.
+                    </label>
+
+                    <input type="checkbox" id="caliente"
+                        name="crepe[]" value="Caliente">
+                    <label for="caliente">
+                        Caliente — Grilled chicken, vegetables, hot peppers,
+                        cheese, salsa, and ranch.
+                    </label>
+
+                    <input type="checkbox" id="alexander"
+                        name="crepe[]" value="Alexander the Crepe">
+                    <label for="alexander">
+                        Alexander the Crepe — Lamb, pepperoni, vegetables,
+                        cheese, pizza sauce, and ranch.
+                    </label>
+
+                    <input type="checkbox" id="crazy-greek"
+                        name="crepe[]" value="Crazy Greek">
+                    <label for="crazy-greek">
+                        Crazy Greek — Lamb, vegetables, cheese,
+                        salsa, and tzatziki.
+                    </label>
+
+                    <input type="checkbox" id="zesty-gyro"
+                        name="crepe[]" value="Zesty Gyro">
+                    <label for="zesty-gyro">
+                        Zesty Gyro — Lamb, vegetables, feta,
+                        salsa, and hot sauce.
+                    </label>
+
+                    <input type="checkbox" id="santa-fe"
+                        name="crepe[]" value="Santa Fe">
+                    <label for="santa-fe">
+                        Santa Fe — Grilled chicken, vegetables, white rice,
+                        black beans, cilantro, avocado, cheese, and salsa.
+                    </label>
+
+                    <input type="checkbox" id="mediterranean"
+                        name="crepe[]" value="Mediterranean">
+                    <label for="mediterranean">
+                        Mediterranean — Ham, pepperoni, vegetables,
+                        feta, and pizza sauce.
+                    </label>
+
+                    <input type="checkbox" id="hawaiian"
+                        name="crepe[]" value="Hawaiian">
+                    <label for="hawaiian">
+                        Hawaiian — Ham, pineapple, vegetables, and cheese.
+                    </label>
+
+                    <input type="checkbox" id="cordon"
+                        name="crepe[]" value="Cordon">
+                    <label for="cordon">
+                        Cordon — Grilled chicken, ham, vegetables,
+                        cheese, and honey Dijon.
+                    </label>
+
+                    <input type="checkbox" id="meat-lovers"
+                        name="crepe[]" value="Meat Lovers">
+                    <label for="meat-lovers">
+                        Meat Lovers — Lamb, roast beef, vegetables, and feta.
+                    </label>
+
+                    <input type="checkbox" id="falafel"
+                        name="crepe[]" value="Falafel">
+                    <label for="falafel">
+                        Falafel — Falafel, vegetables, cheese, and tzatziki.
+                    </label>
+
+                    <input type="checkbox" id="very-veggie"
+                        name="crepe[]" value="Very Veggie">
+                    <label for="very-veggie">
+                        Very Veggie — Veggie burger, vegetables, and feta.
+                    </label>
+
+                    <input type="checkbox" id="pulled-pork"
+                        name="crepe[]" value="Pulled Pork">
+                    <label for="pulled-pork">
+                        Pulled Pork — Pulled pork, vegetables, and cheese.
+                    </label>
+
+                    <input type="checkbox" id="madis-veggie"
+                        name="crepe[]" value="Madi's Veggie">
+                    <label for="madis-veggie">
+                        Madi's Veggie — Vegetables, pineapple, feta, and pesto.
+                    </label>
+
+                    <input type="checkbox" id="bbq-burger"
+                        name="crepe[]" value="BBQ Burger">
+                    <label for="bbq-burger">
+                        BBQ Burger — Beef burger, vegetables, cheese, and BBQ sauce.
+                    </label>
+
+                    <input type="checkbox" id="veggie"
+                        name="crepe[]" value="Veggie">
+                    <label for="veggie">
+                        Veggie — Vegetables and feta.
+                    </label>
+
+                    <input type="checkbox" id="southwestern"
+                        name="crepe[]" value="Southwestern">
+                    <label for="southwestern">
+                        Southwestern — Steak, vegetables, cheese, BBQ, and ranch.
+                    </label>
+
+                    <input type="checkbox" id="seafood-combo"
+                        name="crepe[]" value="Seafood Combo">
+                    <label for="seafood-combo">
+                        Seafood Combo — Shrimp, imitation crab, vegetables,
+                        cheese, and chipotle sauce.
+                    </label>
+
+                    <input type="checkbox" id="pizza"
+                        name="crepe[]" value="Pizza">
+                    <label for="pizza">
+                        Pizza — Pepperoni, vegetables, cheese, and pizza sauce.
+                    </label>
+                </fieldset>
+
+                <!-- Optional upgrades listed on the official menu -->
+                <fieldset>
+                    <legend>Extra Toppings and Upgrades</legend>
+
+                    <p>
+                        The business lists whipped cream, walnuts,
+                        and ice cream as sweet crepe upgrades.
+                    </p>
+
+                    <input type="checkbox" id="whipped-cream"
+                        name="extras[]" value="Whipped Cream">
+                    <label for="whipped-cream">Whipped Cream</label>
+
+                    <input type="checkbox" id="walnuts"
+                        name="extras[]" value="Walnuts">
+                    <label for="walnuts">Walnuts</label>
+
+                    <input type="checkbox" id="ice-cream"
+                        name="extras[]" value="Ice Cream">
+                    <label for="ice-cream">Ice Cream</label>
+                </fieldset>
+
+                <!-- Sauce selection -->
+                <fieldset>
+                    <legend>Sauce Preference</legend>
+
+                    <label for="sauce">Choose a sauce:</label>
+
+                    <select id="sauce" name="sauce">
+                        <option value="">No preference</option>
+                        <option value="Chipotle">Chipotle</option>
+                        <option value="Ranch">Ranch</option>
+                        <option value="Honey Dijon">Honey Dijon</option>
+                        <option value="Caesar">Caesar</option>
+                        <option value="Hot Sauce">Hot Sauce</option>
+                        <option value="Pesto">Pesto</option>
+                        <option value="Salsa">Salsa</option>
+                        <option value="Pizza Sauce">Pizza Sauce</option>
+                        <option value="Blue Cheese">Blue Cheese</option>
+                        <option value="Feta Sauce">Feta Sauce</option>
+                        <option value="Tzatziki">Tzatziki</option>
+                        <option value="BBQ">BBQ</option>
+                        <option value="General Tso's">General Tso's</option>
+                    </select>
+                </fieldset>
+
+                <!-- Pickup information -->
+                <fieldset>
+                    <legend>Pickup Details</legend>
+
+                    <label for="pickup-date">Pickup Date:</label>
+                    <input
+                        type="date"
+                        id="pickup-date"
+                        name="pickup-date"
+                        required
+                    >
+
+                    <label for="pickup-time">Pickup Time:</label>
+                    <select id="pickup-time" name="pickup-time" required>
+                        <option value="">Select a pickup time</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                    </select>
+
+                    <label for="alternate-name">
+                        Alternate Pickup Name:
+                    </label>
+                    <input
+                        type="text"
+                        id="alternate-name"
+                        name="alternate-name"
+                        placeholder="Name of the person picking up"
+                    >
+
+                    <label for="pickup-instructions">
+                        Pickup Instructions:
+                    </label>
+                    <textarea
+                        id="pickup-instructions"
+                        name="pickup-instructions"
+                        rows="3"
+                        placeholder="Add any details about your pickup."
+                    ></textarea>
+                </fieldset>
+
+                <!-- Additional customer requests -->
+                <fieldset>
+                    <legend>Special Instructions</legend>
+
+                    <label for="special-instructions">
+                        Allergies, ingredient changes, or other requests:
+                    </label>
+
+                    <textarea
+                        id="special-instructions"
+                        name="special-instructions"
+                        rows="5"
+                        placeholder="Tell us anything else we should know."
+                    ></textarea>
+                </fieldset>
+
+                <p>
+                    Please review your selections before submitting.
+                    This demonstration form does not transmit orders
+                    to the food truck.
+                </p>
+
+                <button type="submit">Place Order</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>The Crepe Truck Philly | Philadelphia, PA</p>
+    </footer>
 
 </body>
 </html>
