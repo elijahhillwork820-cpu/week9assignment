@@ -44,11 +44,10 @@
                 Please confirm those prices with the truck.
             </p>
 
-            <!-- Demonstration form: no information is transmitted -->
+            <!-- Formspree integration -->
             <form
-                action="#"
-                method="post"
-                onsubmit="event.preventDefault(); alert('This is a demonstration form. Your information has not been sent to the food truck.');"
+                action="https://formspree.io/f/xnpdnvql"
+                method="POST"
             >
 
                 <!-- Customer contact information -->
@@ -473,11 +472,11 @@
 
                 <p>
                     Please review your selections before submitting.
-                    This demonstration form does not transmit orders
-                    to the food truck.
+                    This educational form sends test submissions to Formspree.
+                    It does not send orders to the food truck.
                 </p>
 
-                <button type="submit">Place Order</button>
+                <button type="submit">Submit Test Order</button>
                 <button type="reset">Clear Form</button>
 
             </form>
